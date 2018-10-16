@@ -139,7 +139,7 @@
       align-items: center;
     }
 
-    .#{$button__class},
+    .#{$button__class}:not(.cui-button--icon),
     .#{$input__class} {
       height: $panel-input__height;
 
@@ -178,7 +178,7 @@
           }
 
           @media #{$medium-up} {
-            .#{$button__class} {
+            .#{$button__class}:not(.cui-button--icon) {
               padding-right: rem-calc(64);
               padding-left: rem-calc(64);
             }
@@ -234,7 +234,7 @@
         }
       }
 
-      .#{$button__class},
+      .#{$button__class}:not(.cui-button--icon),
       .#{$input__class} {
         min-height: $panel-input__height;
         padding-right: rem-calc(20);
